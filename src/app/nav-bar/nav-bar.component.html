@@ -1,0 +1,29 @@
+
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header" >
+        <a class="navbar-brand" href="#">NATUM</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a [routerLink]="['/home']">Home</a></li>
+        <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Services
+            <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Personal Banking</a></li>
+              <li><a href="#">Debit Cards</a></li>
+              <li><a href="#">Credit Cards</a></li>
+            </ul> 
+          </li>
+  
+  
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact Us</a></li>
+       
+      </ul>
+      <ul class="nav navbar-nav" style="float:right">
+        <li><a [routerLink]="['/login']">Sign in</a></li>
+      </ul>
+    </div>
+  </nav>
+    

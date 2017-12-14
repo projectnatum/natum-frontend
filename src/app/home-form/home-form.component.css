@@ -1,0 +1,31 @@
+.container{
+    width:50%;
+    border: 1px solid #3C7DC4;
+    border-radius: 20px;
+}
+
+img{
+    max-width: 100%;
+    max-height: 100%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.title{
+    height: 4.5em;
+    text-align: center;    
+    background-color: #3C7DC4; 
+    color: white;
+    
+}
+
+.row>h1{
+   text-align: center;
+}
+
+.row>img{
+    display:block;
+    margin:auto;
+    height:300px;
+   
+}
