@@ -12,6 +12,8 @@ import { LoginFormComponent } from './login-form/login-form.component';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { RegistrationService } from './registration-form/registration.service';
 import { HttpModule } from '@angular/http';
+import { CustomersListComponent } from './customers-list/customers-list.component';
+import { CustomersListService } from './customers-list/customers-list.service';
 
 
 
@@ -22,6 +24,7 @@ import { HttpModule } from '@angular/http';
     HomeFormComponent,
     NavBarComponent,
     LoginFormComponent,
+    CustomersListComponent,
     
   ],
   imports: [
@@ -32,13 +35,14 @@ import { HttpModule } from '@angular/http';
     RouterModule.forRoot([
       {path:'',redirectTo:'/home',pathMatch:"full"},
       {path:'home',component:HomeFormComponent},
-      {path:'customers',component:RegistrationFormComponent},
-      {path:'login',component:LoginFormComponent}      
+      {path:'register',component:RegistrationFormComponent},
+      {path:'login',component:LoginFormComponent},
+      {path:'customers',component:CustomersListComponent}      
 
     ]),
    
   ],
-  providers: [RegistrationService],
+  providers: [RegistrationService,CustomersListService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
