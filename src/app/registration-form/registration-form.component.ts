@@ -40,9 +40,10 @@ export class RegistrationFormComponent implements OnInit {
     // console.log(obj,"--->converted date");
     let registrationData=Object.assign({},this.registrationForm.value);
     this.registrationService.saveCustomers(registrationData).subscribe(
-      (res)=>console.log(res,"from server")
+      (res)=>console.log(res._body,"from server")
     )   
-
+    this.registrationForm.reset();
+     
   }
 
 }
